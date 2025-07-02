@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Faces - The Traveling Rock Project</title>
+    <meta name="description" content="Discover the magical world of Wild Faces - painted rocks with personalities that travel the world, spreading joy and connecting communities through art and adventure.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">🌍 Wild Faces</h1>
+            <p class="site-subtitle">The Traveling Rock Project</p>
+            <p class="site-subtitle">Painted. Placed. Found. Shared.</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">🏠 Home</a></li>
+                <li class="nav-item"><a href="submit.html">📝 Found One?</a></li>
+                <li class="nav-item"><a href="about.html">ℹ️ About</a></li>
+                <li class="nav-item"><a href="#start-your-own">🎨 Start Your Own</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Introduction Section -->
+            <section class="intro-section">
+                <h2>Welcome to the Adventure! 🎒</h2>
+                <p class="intro-text">
+                    Every Wild Face is a rock with a story.<br>
+                    Painted by someone like you.<br>
+                    Hidden somewhere magical.<br>
+                    <strong>If you found one — you're part of the journey!</strong>
+                </p>
+                <p class="intro-text">
+                    Click any rock below to read their story, see where they've been, 
+                    and help them continue their adventure around the world! 🌎
+                </p>
+            </section>
+
+            <!-- Rock Gallery -->
+            <section class="rock-gallery-section">
+                <h2>Meet Our Traveling Friends</h2>
+                <p style="text-align: center; color: var(--color-text-light); margin-bottom: 2rem;">
+                    Click a rock to explore its journey! 👆
+                </p>
+                
+                <div id="rock-gallery" class="rock-gallery">
+                    <!-- Rock cards will be dynamically loaded here by JavaScript -->
+                    <div style="text-align: center; padding: 3rem; color: var(--color-text-light);">
+                        <p>🔄 Loading our rock friends...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="intro-section" id="start-your-own">
+                <h2>Ready to Create Your Own Wild Face? 🎨</h2>
+                <p class="intro-text">
+                    Grab some paint, find a smooth rock, and let your imagination run wild! 
+                    Paint a face, give it a name, create a personality, and send it out into the world.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="about.html" class="btn btn-large btn-primary">Learn How to Make One</a>
+                    <a href="submit.html" class="btn btn-large" style="margin-left: 1rem;">Add a Sighting</a>
+                </div>
+            </section>
+
+            <!-- Fun Stats Section -->
+            <section class="intro-section">
+                <h2>Amazing Adventures So Far! 📊</h2>
+                <div class="rock-details">
+                    <div class="detail-card">
+                        <div class="detail-label">🏃‍♂️ Total Distance Traveled</div>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--color-warm-clay);">47.2 km</p>
+                        <p>That's like walking from one end of the city to the other!</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">👥 People Connected</div>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--color-warm-clay);">23 Finders</p>
+                        <p>From age 5 to 85 - everyone loves finding Wild Faces!</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">📍 Unique Locations</div>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--color-warm-clay);">15 Places</p>
+                        <p>Parks, libraries, cafés, and secret hiding spots!</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">😊 Smiles Created</div>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--color-warm-clay);">Countless!</p>
+                        <p>Every find brings joy and wonder to someone's day.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit.html">Submit Update</a></li>
+                <li><a href="about.html">About Wild Faces</a></li>
+                <li><a href="mailto:hello@wildfaces.com">Contact</a></li>
+            </ul>
+            <p style="color: var(--color-text-light); font-size: 0.9rem;">
+                Made with 💚 for rock adventurers everywhere<br>
+                © 2024 Wild Faces Project - Spreading joy one rock at a time
+            </p>
+        </div>
+    </footer>
+
+    <!-- Include JavaScript -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

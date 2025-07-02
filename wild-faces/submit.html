@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found a Wild Face? - Wild Faces</title>
+    <meta name="description" content="Found one of our traveling Wild Faces? Tell us about your discovery and help continue their journey around the world!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">🌍 Wild Faces</h1>
+            <p class="site-subtitle">The Traveling Rock Project</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">🏠 Home</a></li>
+                <li class="nav-item"><a href="submit.html">📝 Found One?</a></li>
+                <li class="nav-item"><a href="about.html">ℹ️ About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Header Section -->
+            <section class="intro-section">
+                <h1>📝 Found a Wild Face? Tell its next chapter!</h1>
+                <p class="intro-text">
+                    Congratulations, adventurer! You've discovered one of our traveling rocks. 
+                    Now you get to be part of their story! 🎉
+                </p>
+                <p class="intro-text">
+                    Tell us about your discovery and where you've sent them next. 
+                    Every update helps build their amazing travel diary! 📖
+                </p>
+            </section>
+
+            <!-- Success Message (Hidden by default) -->
+            <div id="success-message" class="success-message">
+                <h3>🎉 Thank you, amazing rock traveler!</h3>
+                <p>Your update has been added to the story! The Wild Face you found is so lucky to have met you. 
+                Keep exploring and maybe you'll find another rock friend soon! 🌟</p>
+            </div>
+
+            <!-- Submission Form -->
+            <div class="form-container">
+                <form id="submit-form">
+                    <div class="form-group">
+                        <label for="rock-select" class="form-label">
+                            🪨 Which Wild Face did you find? *
+                        </label>
+                        <select id="rock-select" name="rock-id" class="form-select" required>
+                            <!-- Options will be populated by JavaScript -->
+                            <option value="">Loading Wild Faces...</option>
+                        </select>
+                        <small style="color: var(--color-text-light); margin-top: 0.5rem; display: block;">
+                            Don't see your rock? It might be a brand new Wild Face! Contact us to add it.
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="finder-name" class="form-label">
+                            👋 Your name or nickname (optional)
+                        </label>
+                        <input type="text" id="finder-name" name="finder-name" class="form-input" 
+                               placeholder="e.g., Rock Detective Ruby, Adventure Sam, or just Sam">
+                        <small style="color: var(--color-text-light); margin-top: 0.5rem; display: block;">
+                            This will be shown in their journey history. Be creative! 🎭
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="found-location" class="form-label">
+                            📍 Where did you find them? *
+                        </label>
+                        <input type="text" id="found-location" name="found-location" class="form-input" 
+                               placeholder="e.g., Under the oak tree at Sunshine Park" required>
+                        <small style="color: var(--color-text-light); margin-top: 0.5rem; display: block;">
+                            Be as specific as helpful - it helps others know the area they travel!
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hidden-location" class="form-label">
+                            🎯 Where did you hide them next? *
+                        </label>
+                        <input type="text" id="hidden-location" name="hidden-location" class="form-input" 
+                               placeholder="e.g., On the bench outside the library" required>
+                        <small style="color: var(--color-text-light); margin-top: 0.5rem; display: block;">
+                            Give future finders a fighting chance - but keep some mystery! 🕵️
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo-upload" class="form-label">
+                            📸 Photo of your find (optional)
+                        </label>
+                        <input type="file" id="photo-upload" name="photo" class="form-input" 
+                               accept="image/*">
+                        <small style="color: var(--color-text-light); margin-top: 0.5rem; display: block;">
+                            Share a photo of where you found or hid the rock! (Coming soon)
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            💌 Message for the next finder (optional)
+                        </label>
+                        <textarea id="message" name="message" class="form-textarea" 
+                                  placeholder="Leave a note, draw something, or tell a short story! What did this rock see with you?"></textarea>
+                        <small style="color: var(--color-text-light); margin-top: 0.5rem; display: block;">
+                            This is your chance to add magic to someone else's day! ✨
+                        </small>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-large btn-primary">
+                            🚀 Submit Their Next Chapter
+                        </button>
+                        <a href="index.html" class="btn btn-large" style="margin-left: 1rem;">
+                            ⬅️ Back to Gallery
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tips Section -->
+            <section class="intro-section">
+                <h2>Making the Magic Happen 🪄</h2>
+                <div class="rock-details">
+                    <div class="detail-card">
+                        <div class="detail-label">🎨 Keep Them Beautiful</div>
+                        <p>If the paint is chipped, feel free to touch it up! Add your own creative flair while keeping their personality.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">🌍 Spread the Adventure</div>
+                        <p>Hide them somewhere new! Different neighborhoods, cities, or even countries - let them explore!</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">📱 Share the Joy</div>
+                        <p>Tell friends and family about Wild Faces! The more people who know, the more adventures happen.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">💝 Create New Ones</div>
+                        <p>Inspired? Paint your own Wild Face and start a new adventure! Check our About page for tips.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Guidelines -->
+            <section class="intro-section">
+                <h2>Community Guidelines 🤝</h2>
+                <div style="text-align: left;">
+                    <ul style="color: var(--color-text-light); line-height: 1.8; margin-left: 2rem;">
+                        <li>🌱 <strong>Respect nature:</strong> Don't hide rocks in protected areas or where they might harm wildlife</li>
+                        <li>🏛️ <strong>Follow local rules:</strong> Check if rock hiding is welcome in your area</li>
+                        <li>👨‍👩‍👧‍👦 <strong>Family-friendly:</strong> Keep all messages and locations appropriate for all ages</li>
+                        <li>🎯 <strong>Be findable:</strong> Hide rocks where people actually visit, not in impossible spots</li>
+                        <li>💚 <strong>Spread kindness:</strong> This project is about joy, connection, and wonder for everyone</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit.html">Submit Update</a></li>
+                <li><a href="about.html">About Wild Faces</a></li>
+                <li><a href="mailto:hello@wildfaces.com">Contact</a></li>
+            </ul>
+            <p style="color: var(--color-text-light); font-size: 0.9rem;">
+                Made with 💚 for rock adventurers everywhere<br>
+                © 2024 Wild Faces Project - Spreading joy one rock at a time
+            </p>
+        </div>
+    </footer>
+
+    <!-- Include JavaScript -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

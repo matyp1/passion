@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Profile - Wild Faces</title>
+    <meta name="description" content="Meet one of our traveling Wild Faces and discover their unique story, personality, and journey around the world.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">🌍 Wild Faces</h1>
+            <p class="site-subtitle">The Traveling Rock Project</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">🏠 Home</a></li>
+                <li class="nav-item"><a href="submit.html">📝 Found One?</a></li>
+                <li class="nav-item"><a href="about.html">ℹ️ About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Rock Profile Section -->
+            <div class="rock-profile">
+                <img id="rock-image" src="" alt="Rock image" class="rock-image">
+                <h1 id="rock-name">Loading...</h1>
+                <p style="font-size: 1.2rem; color: var(--color-text-light); margin-bottom: 1rem;">
+                    <span id="rock-personality">Loading personality...</span>
+                </p>
+                
+                <!-- Rock Story -->
+                <div class="rock-story">
+                    <p id="rock-story">Loading this rock's amazing story...</p>
+                </div>
+
+                <!-- Rock Details -->
+                <div class="rock-details">
+                    <div class="detail-card">
+                        <div class="detail-label">📍 Last Seen At</div>
+                        <p id="rock-last-seen">Loading location...</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">🕒 When</div>
+                        <p id="rock-last-seen-date">Loading date...</p>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div style="margin: 2rem 0; text-align: center;">
+                    <a href="submit.html" class="btn btn-large btn-primary">
+                        🎯 Add Your Update
+                    </a>
+                    <a href="index.html" class="btn btn-large" style="margin-left: 1rem;">
+                        ⬅️ Back to Gallery
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sightings History -->
+            <div id="sightings-list" class="sightings-list">
+                <!-- Will be populated by JavaScript -->
+                <div style="text-align: center; padding: 2rem; color: var(--color-text-light);">
+                    <p>🔄 Loading journey history...</p>
+                </div>
+            </div>
+
+            <!-- Encouragement Section -->
+            <section class="intro-section">
+                <h2>Help This Rock Continue Its Journey! 🚀</h2>
+                <p class="intro-text">
+                    Found this Wild Face? You're now part of their story! 
+                    Let us know where you discovered them and where you've sent them next.
+                </p>
+                <p class="intro-text">
+                    Every update helps build their travel diary and connects them with new friends around the world.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="submit.html" class="btn btn-large btn-primary">
+                        📝 Submit an Update
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tips Section -->
+            <section class="intro-section">
+                <h2>Rock Hiding Tips 💡</h2>
+                <div class="rock-details">
+                    <div class="detail-card">
+                        <div class="detail-label">🌳 Choose Safe Spots</div>
+                        <p>Parks, libraries, cafés, and community spaces where families visit</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">☀️ Weather Protection</div>
+                        <p>Avoid direct rain or harsh sun that might damage the paint</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">👁️ Make It Findable</div>
+                        <p>Visible enough to be discovered but not so obvious it's boring!</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">📸 Take a Photo</div>
+                        <p>Capture the hiding spot to share with the community</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit.html">Submit Update</a></li>
+                <li><a href="about.html">About Wild Faces</a></li>
+                <li><a href="mailto:hello@wildfaces.com">Contact</a></li>
+            </ul>
+            <p style="color: var(--color-text-light); font-size: 0.9rem;">
+                Made with 💚 for rock adventurers everywhere<br>
+                © 2024 Wild Faces Project - Spreading joy one rock at a time
+            </p>
+        </div>
+    </footer>
+
+    <!-- Include JavaScript -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
